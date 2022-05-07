@@ -209,7 +209,7 @@
   align-self: flex-start;
   margin-top: -34px;
   text-align: left;
-  margin-left: 120px;
+  margin-left: 245px;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
   background-color: #bfbfbf;
@@ -432,7 +432,7 @@
     border-width: 1px;
   }
   .home-text08 {
-    left: -250px;
+    left: -240px;
   }
   .home-footer {
     flex-direction: column;
@@ -464,7 +464,7 @@
     justify-content: center;
   }
   .home-text08 {
-    left: -140px;
+    left: -245px;
   }
   .home-footer {
     padding-left: var(--dl-space-space-twounits);
