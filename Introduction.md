@@ -8,5 +8,5 @@
 <img height=200px; src="./qr/QR-Boogschietkist.svg"/>
 
 ### Tenten
-<pre><b>Normale Tenten            Leiding Tent               Fouragetent</b><br></pre>
+<pre><b>Normale Tenten            Leiding Tent               Fourage Tent</b><br></pre>
 <img height=200px; src="./qr/QR-Normale-Tent.svg"/><img height=200px; src="./qr/QR-Leiding-Tent.svg"/><img height=200px; src="./qr/QR-Fourage-Tent.svg"/>
