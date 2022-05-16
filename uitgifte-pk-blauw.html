@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Primary Meta Tags -->
+        <title>Uitgifte - H.J.B. Wateregge Materiaal Beheer</title>
+        <meta property="og:title" content="H.J.B. Wateregge Materiaal Beheer - Uitgifte" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="uitgifte.css">
+        <?!= include('JavaScript'); ?>
+    </head>
+    <body>
+        <div>
+            <h1>In- en uitchecken</h1>
+            <p>Materiaal</p>
+            <form name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbzepWiTRAn3RO8-AF3mlb54IFopVZTqWbdIf_FdH2Tj94jbHsRP7TZwp7MMiaWEA92pfw/exec" autocomplete="on">
+                <label for="Naam">Jouw naam</label>
+                <br/>
+                <input type=text class="form-control" name="Naam" placeholder="Voer hier uw naam in" value=""/>
+                <input type=hidden class="form-control" name="Voorwerp" value="Patrouillekist Blauw"/>
+                <br/>
+                <label for="Status">In-/uitchecken</label><p style="padding-left: 5px; display: inline;"><br/>Selecteer de juiste optie</p>   
+                <br/>
+                <select id="status" class="form-control" name="Uitgifte">
+                    <option value="Uitgecheckt">Uitchecken</option>
+                    <option value="Ingechecked">Inchecken</option>
+                </select>
+                <p style="padding-bottom:5px; margin-bottom:0;"><b>Uitchecken:</b> <u>Ik neem dit voorwerp mee.</u></p>
+                <p style="padding-top:0; padding-bottom:0; margin-bottom:0;"><b>Inchecken:</b> <u>Ik breng dit voorwerp terug en ik heb alle bovenstaande regels gevolgt.</u></p>
+                <br/>
+                <p style="padding-top:10px; margin-bottom:0px; font-weight:bold; font-style:italic">Controleer of de informatie juist is ingevoerd voordat u op "versturen" klikt.</p>
+                <button type="submit" onclick="alert('Succesvol verstuurd!')"><span style="font-weight:bold;">Versturen</span></button>
+            </form>
+        </div>
+    </body>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxZlHVj0yUya4YODkkR19F3xXHQ5SgM0y__zEns_onxCDVjCQjmpucB1-spcml792OihA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</html>
