@@ -71,6 +71,7 @@
 }
 .list-item {
   display: list-item;
+  padding: 2px 0px 2px 0px;
 }
 .teleport-show {
   display: flex !important;
@@ -90,4 +91,9 @@
   line-height: 1.15;
   text-transform: none;
   text-decoration: none;
+}
+
+.gebruik-span {
+  margin-left: -15px;
+  padding-bottom: 2px;
 }
