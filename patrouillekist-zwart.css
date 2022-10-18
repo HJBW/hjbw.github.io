@@ -209,13 +209,13 @@
   align-self: flex-start;
   margin-top: -34px;
   text-align: left;
-  margin-left: 130px;
+  margin-left: 120px;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
-  background-color: #000000;
+  background-color: #ff0000;
 }
 .home-text10 {
-  background-color: #000000;
+  background-color: #ff0000;
 }
 .home-ul {
   height: 97px;
@@ -432,7 +432,7 @@
     border-width: 1px;
   }
   .home-text08 {
-    left: -130px;
+    left: -250px;
   }
   .home-footer {
     flex-direction: column;
@@ -464,7 +464,7 @@
     justify-content: center;
   }
   .home-text08 {
-    left: -130px;
+    left: -140px;
   }
   .home-footer {
     padding-left: var(--dl-space-space-twounits);
@@ -505,7 +505,7 @@
     padding: 16px;
   }
   .home-text08 {
-    left: -130px;
+    left: -122px;
     bottom: -88px;
     position: static;
   }
