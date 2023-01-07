@@ -532,3 +532,8 @@
     align-self: stretch;
   }
 }
+
+.adds {
+	width: 95%;
+	padding-bottom: 5px;
+}
