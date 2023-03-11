@@ -209,13 +209,13 @@
   align-self: flex-start;
   margin-top: -34px;
   text-align: left;
-  margin-left: 120px;
+  margin-left: 235px;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
-  background-color: #ff0000;
+  background-color: #ff0083;
 }
 .home-text10 {
-  background-color: #ff0000;
+  background-color: #ff0083;
 }
 .home-ul {
   height: 97px;
