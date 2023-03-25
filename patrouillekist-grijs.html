@@ -6,71 +6,66 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
     <style>
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
     </style>
-    <style> 
-      html { 
-        font-family: Inter; 
-        font-size: 16px; 
-      }
-  
-      body { 
-        font-weight: 400; 
-        font-style:normal; 
-        text-decoration: none; 
-        text-transform: none; 
-        letter-spacing: normal; 
-        line-height: 1.15; 
-        color: var(--dl-color-gray-black); 
-         background-color: var(--dl-color-gray-white); 
-  
-       } 
-        
-      .alert { 
-        width: 95%; 
-        padding: 20px; 
-        background-color: #f44336; /* Red */ 
-        color: white; 
-        margin-top: 10px; 
-        margin-bottom: 10px; 
-      } 
-  
-      .alert ul span { 
-        margin-left: -20px; 
-      } 
-  
-      .alert ul { 
-        margin-left: 20px; 
-        margin-top: 10px; 
-      } 
-  
-      .closebtn { 
-        margin-left: 15px; 
-        color: white; 
-        font-weight: bold; 
-        float: right; 
-        font-size: 22px; 
-        line-height: 20px; 
-        cursor: pointer; 
-        transition: 0.3s; 
-       } 
-  
-      .closebtn:hover { 
-        color: black; 
-      } 
-  
-      #missing { 
-        color: red; 
-        font-weight: bold; 
-        text-decoration-line: underline; 
-      } 
-    </style>
+    <style>
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+
+      .home-text08{
+        margin-left: 110px;
+        background-color: #bfbfbf;
+      }
+
+      .home-text10 {
+        background-color: #bfbfbf;
+      }
+
+      @media(max-width: 991px) {
+        .home-text08 {
+          left: -240px;
+        }
+      }
+
+      @media(max-width: 767px) {
+        .home-text08 {
+          left: -245px;
+        }
+      }
+
+      @media(max-width: 479px) {
+        .home-text08 {
+          left: -245px;
+        }
+      }
+    </style>
     <link
+
+    
+        
+          
+    
+
+        
+    
+    @@ -39,7 +65,7 @@
+  
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     />
@@ -82,6 +77,16 @@
 
       <div class="home-container">
         <header data-role="Header" class="home-header">
+
+    
+          
+            
+    
+
+          
+    
+    
+  
           <img
             alt="logo"
             src="https://nl.scoutwiki.org/images/6/69/Logo_hjb_wateregge.png"
@@ -140,17 +145,6 @@
             </div>
           </div>
         </header>
-        <div class="alert"> 
-           <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
-           <b>Let op!</b> Deze kist is niet volledig compleet. 
-           <ul> 
-             <span><u>Voorwerpen die ontbreken:</u></span> 
-             <li style="margin-top: 8px;">Filterpapier</li> 
-             <li>Lucifers</li>
-             <li>Extra bestek</li>
-             <li>Opvouwbare jerrycan: dop</li>
-           </ul> 
-         </div>
         <h1 class="home-text04">
           <span>Patrouillekist</span>
           <br />
@@ -178,7 +172,7 @@
               <li class="list-item"><span>RVS thermoskan</span></li>
               <li class="list-item"><span>Maatbeker</span></li>
               <li class="list-item"><span>Vergiet</span></li>
-              <li class="list-item"><span id="missing">Opvouwbare jerrycan</span></li>
+              <li class="list-item"><span>Opvouwbare jerrycan</span></li>
               <li class="list-item"><span>Pionierschep</span></li>
               <li class="list-item"><span>Snijplank groot</span></li>
               <li class="list-item"><span>Snijplank klein</span></li>
@@ -208,9 +202,6 @@
                 <li class="list-item"><span>Dunschillers (2x)</span></li>
                 <li class="list-item"><span>Schilmes</span></li>
                 <li class="list-item"><span>Vijfdelige messenset</span></li>
-                <li class"list-item"><span id="missing">Filterpapier</span></li>
-                <li class"list-item"><span id="missing">Lucifers</span></li>
-                <li class"list-item"><span id="missing">Extra bestek</span></li>
               </ul>
             </ul> 
         <footer class="home-footer">
