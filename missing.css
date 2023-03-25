@@ -1,0 +1,38 @@
+      .alert {
+        width: 95%;
+        padding: 20px;
+        background-color: #f44336; /* Red */
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .alert ul span {
+        margin-left: -20px;
+      }
+
+      .alert ul {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .closebtn:hover {
+        color: black;
+      }
+
+      #missing {
+        color: red;
+        font-weight: bold;
+        text-decoration-line: underline;
+      }
